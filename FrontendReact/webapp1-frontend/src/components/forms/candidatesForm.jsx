@@ -108,7 +108,7 @@ class CandidatesForm extends Form {
             if(property !== "skills"){
 
                 if(property === 'eMail'){
-                    if(data[property].indexOf("@") !== -1 || data[property].indexOf(".com") !== -1 || data[property].length <= 10)
+                    if(!(data[property].indexOf("@") !== -1 || data[property].indexOf(".com") !== -1 || data[property].length <= 10))
                         errors[property] = "Please enter a valid email adress";
                 }else
                 if(data[property] === null || data[property].replace(" ","") === ""){
