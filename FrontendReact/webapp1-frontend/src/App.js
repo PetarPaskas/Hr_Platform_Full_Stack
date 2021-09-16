@@ -25,7 +25,7 @@ function App() {
       <Route path="/candidates" component={Platform}/>
 
       <Route path="/skills/:id" component={SkillsForm} />
-
+      <Route path="/index.html"  component={Platform}/>
       <Route path="/" exact component={Platform}/>
       <Route path="/not-found" component={NotFound} />
       <Redirect to="/not-found"/>
