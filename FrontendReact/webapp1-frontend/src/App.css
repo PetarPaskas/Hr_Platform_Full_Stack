@@ -1,0 +1,161 @@
+
+
+.platform{
+  max-width:1140px;
+  display:flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content:space-evenly;
+  align-items:flex-start;
+  padding:2rem 0;
+}
+.platform__group{
+  display:flex;
+  flex-direction: column;
+}
+.nav-item:not(:last-child){
+  margin-right:1rem;
+}
+
+.table__td-skills--last{
+  font-size:.9rem;
+  font-weight: 600;
+}
+.table__ul-skills-list{
+  text-align: center;
+  text-transform: uppercase;
+  list-style-type: none;
+  
+}
+.table__ul-skills-list li{
+  padding:10px 0;
+  max-width:500px;
+  margin: 0 auto;
+  color:rgb(88, 88, 88);
+  border-bottom:1px solid rgb(88, 88, 88);
+}
+.table__link{
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color:rgb(63, 63, 63);
+  border-bottom:1px solid rgb(88,88,88);
+  backface-visibility: hidden;
+  transition:all .3s;
+  
+}
+.table__link:hover,
+.table__link:active{
+  border-bottom:1px solid #333;
+  color:#333;
+  transform:scale(1.05) translateY(-3px);
+}
+.btn-group-vertical{
+  width:250px;
+}
+
+.btn-group-vertical__heading-tertiary{
+  align-self: center;
+  font-size:1.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  color:#333;
+  padding:.5rem 0;
+}
+.platform__heading-tertiary{
+  align-self: flex-start;
+  padding:.5rem 0;
+  font-size:1.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  color:#333;
+}
+
+.platform__small{
+  font-weight: 500;
+}
+
+.form{
+  padding:1rem  4rem;
+}
+
+.form .form-control{
+  width:500px;
+}
+
+.form .form-group{
+  padding:.8rem 0;
+}
+
+.form__heading-secondary{
+  text-transform: uppercase;
+}
+
+.btn-group-vertical .btn{
+  position:relative;
+  overflow: hidden;
+}
+
+.btn--close{
+  right:0;
+  background-color: orangered;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.btn--edit{
+  background-color: rgb(247, 227, 46);
+  left:0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn--close,
+.btn--edit{
+  visibility:hidden;
+  opacity:0;
+  outline:none;
+  border:none;
+  position:absolute;
+  top:0;
+  height:100%;
+  z-index:2;
+  width:10%;
+  transition:all .2s;
+  font-weight: 600;
+  font-size:.9rem;
+  color:#333;
+  display:inline-block;
+}
+
+.btn-group-vertical .btn:hover .btn--close,
+.btn-group-vertical .btn:hover .btn--edit{
+  visibility: visible;
+  opacity:1;
+}
+
+.btn--close:hover,
+.btn--edit:hover,
+.btn--close:active,
+.btn--edit:active{
+    width:50%;
+}
+
+.btn--close:hover::after,
+.btn--edit:hover::after,
+.btn--close:active::after,
+.btn--edit:active::after{
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.btn--close:hover::after,
+.btn--close:active::after{
+  content:"Delete"
+}
+
+.btn--edit:hover::after,
+.btn--edit:active::after{
+  content:"Edit"
+}
+

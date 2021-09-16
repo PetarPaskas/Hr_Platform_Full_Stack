@@ -1,0 +1,4 @@
+{
+    "candidatesUrl": "https://localhost:44394/api/candidates",
+    "skillsUrl" : "https://localhost:44394/api/skills"
+}
